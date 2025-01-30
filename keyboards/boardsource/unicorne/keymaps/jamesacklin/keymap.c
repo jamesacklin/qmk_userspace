@@ -56,7 +56,7 @@ combo_t key_combos[COMBO_COUNT] = {
 #define OSM_CTL  OSM(MOD_LCTL)
 #define OSM_SFT  OSM(MOD_LSFT)
 #define LOW_BSP  LT(_LOWER, KC_BSPC)
-#define RSE_SPC  LT(_RAISE, KC_SPC)
+#define RSE_ENT  LT(_RAISE, KC_ENT)
 
 // For _RAISE layer
 #define CTL_ESC  LCTL_T(KC_ESC)
@@ -71,7 +71,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
  OSM(MOD_LSFT),   KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                     KC_N    ,KC_M    ,KC_COMM ,KC_DOT  ,KC_SLSH ,OSL_FUN ,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                         OSM_CTL, KC_LGUI, LOW_BSP ,   RSE_SPC ,KC_ENT  ,OSM_SFT
+                                         OSM_CTL, KC_LGUI, LOW_BSP ,   RSE_ENT ,KC_SPC  ,OSM_SFT
                                       //`--------------------------'  `--------------------------'
   ),
 
